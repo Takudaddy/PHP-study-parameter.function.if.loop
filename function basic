@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Function</title>
+  </head>
+
+
+  <body>
+     <h1>Function basic</h1>
+       <?php
+         function basic(){
+          echo ("sdf weifu sdjhfsd<br>");
+          print ("sdfsd sdfsdf afkjo<br>");
+         }
+          basic();
+       ?>
+
+        <h2>parameter variable(매개,변수) &amp; argument(구체적 표현식, 입력한 실제 값)</h2>
+          <?php
+            function sum($left, $right){
+               print($left + $right);
+               echo ("<br>");}
+
+              sum(4,5);
+              print sum (34, 42);
+           ?>
+
+           <h2>Return</h2>
+            <?php
+              function sum2($left, $right){
+                return $left + $right;
+              }
+
+                print (sum2(23,43));
+                file_put_contents('results of sum2.txt', sum2(23, 43));
+
+
+
+
+
+            ?>
+
+
+  </body>
+</html>
