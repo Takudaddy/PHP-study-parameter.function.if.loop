@@ -62,27 +62,23 @@ function print_list(){
           </ol>
 
           <a href="create.php">create</a>
+            <form action="create_process.php" method="post">
 
-          <?php if(isset($_GET['id'])) { ?>
-              <a href="update.php?id=<?=$_GET['id']?>">update</a>
+              <p>
+                 <input type="text"
+                  name="title"
+                  placeholder="Title">
+              </p>
 
-              <form action="delete_process.php" method="post">
-              <input type="hidden" name="id" value="<?=$_GET['id']?>">
-              <input type="submit" value="delete">
-              </form>
-                                  <?php } ?>
+              <p>
+                  <textarea name="description"
+                   placeholder="hit me"></textarea>
+              </p>
 
-         <!-- <a href="update.php?id=<?php// echo $_GET['id'];?>">update</a> -->
-
-      <h2>
-          <?php
-            print_title();
-          ?>
-      </h2>
-
-          <?php
-               print_description();
-          ?>
+              <p>
+                 <input type="submit">
+              </p>
+            </form>
 
 
   </body>
