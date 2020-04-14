@@ -42,3 +42,4 @@ function print_list(){
 unlink('data/'.basename ($_POST['id']));
 header('Location: indexing.php');
 ?>
+
